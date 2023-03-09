@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+.hoverable-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+  .bullet {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: currentColor;
+    border-radius: 20;
+    transform-origin: 'center';
+  }
+}

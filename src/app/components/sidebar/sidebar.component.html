@@ -1,0 +1,25 @@
+<div
+  #Backdrop
+  class="backdrop"
+  [class.activated]="(isOpened || isOpening) && !isClosing"
+></div>
+<div
+  #Wrapper
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+  class="wrapper"
+>
+  <div class="container">
+    <div #Items class="items">
+      <h1 class="title">This App</h1>
+      <div #Content class="content">
+        <ng-content></ng-content>
+      </div>
+      <p class="footer">All rights reserved and shifted! 2064</p>
+    </div>
+  </div>
+</div>
+
+<div #Handle class="handle">
+  <p>... SIDEBAR ...</p>
+</div>

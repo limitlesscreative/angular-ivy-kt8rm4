@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #222;
+    }
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10%;
+  gap: 20px;
+}
